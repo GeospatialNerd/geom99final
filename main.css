@@ -1,3 +1,74 @@
+/* ----------------------------------------- */
+/* Styling the nav bar starts here */
+ul { 
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1F2833;
+    }
+
+.navbar {
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    /*max-width: 100%;
+    width:auto; */
+}
+.navbar div {
+    flex: 1 1 auto;
+}
+    
+li {
+    display: inline;
+    /*float: left;*/
+} 
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #45A29E;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+    
+.dropdown-content a:hover {background-color: #C5C6C7;}
+    
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* W3 Schools CSS Taken Straight from Their Website */
+/* Ideally DONT TOUCH THIS */
+
 /* W3.CSS 4.15 December 2020 by Jan Egil and Borge Refsnes */
 html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
 

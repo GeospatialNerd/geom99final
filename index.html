@@ -2,13 +2,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Web Golf</title>
+<title>GEOM 99 Web Golf</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="main.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
+body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif; margin-top: 16px}
 .w3-bar,h1,button {font-family: 'Lucida Sans', sans-serif}
 .fa-anchor,.fa-coffee {font-size:200px}
 </style>
@@ -17,41 +17,46 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
 
 <!-- This template was taken from w3 schools and adapted to suit our project, see footer for reference link -->
 
-<!-- Navbar -->
-<div class="w3-top">
-<div class="w3-bar w3-black w3-card w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-blue" 
-    href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Introduction</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Methodology</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Conclusion</a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Not Sure Yet</a>
-</div>
-
-<!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Introduction</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Methodology</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Conclusion</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Not Sure Yet</a>
-</div>
+<!-- Taken from and adapted from https://www.w3schools.com/css/css_navbar.asp and https://www.w3schools.com/css/css_dropdowns.asp-->
+<!-- NavBar here -->
+<div class="navbar">
+    <div>
+        <ul>
+            <li><a href=#header>Home</a></li>
+            <li><a href=#intro>Introduction</a></li>
+            <li class="dropdown">
+                <a href="javascript:void(0)" class="dropbtn">Project Process</a>
+                    <div class="dropdown-content">
+                        <a href=#dash>ArcGIS Dashboards</a>
+                        <a href=#story>ArcGIS StoryMaps</a>
+                        <a href=#app>ArcGIS Web App Builder</a>
+                        <a href=#exp>ArcGIS Experience Builder</a>
+                        <a href=#arcade>Arcade Functionality</a>
+                        <a href=#vert>VertiGIS Studio & Workflow</a>
+                    </div>
+            <li><a href=#conclusion>Conclusion</a></li>
+        </ul>
+    </div>
 </div>
 
 <!-- Header starts here ------------------------------------>
-<header class="w3-container w3-blue w3-center" style="padding:128px 16px">
-<h1 class="w3-margin w3-jumbo">GEOM 99</h1>
-<p class="w3-xlarge">Some headline</p>
-<button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+<header id="header" class="w3-container w3-blue w3-center" style="padding:90px 16px">
+<h1 class="w3-margin w3-jumbo">Monitoring Biomass in Lake Simcoe</h1>
+<p class="w3-xlarge">A web based GIS solution for residents to monitor genenral lake health with biomass as an indicator</p>
 </header>
 
 <!-- First Grid starts here --------------------------------->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div id="intro" class="w3-row-padding w3-padding-64 w3-container">
 <div class="w3-content">
     <div class="w3-twothird">
-    <h1>First grid</h1>
+    <h1>Introduction</h1> 
     <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
+    <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+    <h1>Problem Statement</h1>
     <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
         occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
         laboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -65,7 +70,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
 </div>
 
 <!-- Second Grid ----------------------------------->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div id="dash" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
 <div class="w3-content">
     <div class="w3-third w3-center">
     <!-- Second picture here...was originally a coffee cup -->
@@ -73,7 +78,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
     </div>
 
     <div class="w3-twothird">
-    <h1>Second grid</h1>
+    <h1>ArcGIS Dashboards</h1>
     <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
 
     <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -84,10 +89,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
 </div>
 
 <!-- Third Grid ----------------------------------->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div  id="story" class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-        <h1>Third grid</h1>
+        <h1>ArcGIS StoryMaps</h1>
         <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
     
         <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -103,7 +108,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
     </div>
 
 <!-- Fourth Grid ----------------------------------->
-<div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+<div id="app" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-third w3-center">
         <!-- Second picture here...was originally a coffee cup -->
@@ -111,7 +116,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
         </div>
     
         <div class="w3-twothird">
-        <h1>Fourth grid</h1>
+        <h1>ArcGIS WebApp Builder</h1>
         <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
     
         <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -122,10 +127,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
     </div>
 
 <!-- Fifth Grid ----------------------------------->
-<div class="w3-row-padding w3-padding-64 w3-container">
+<div id="exp" class="w3-row-padding w3-padding-64 w3-container">
     <div class="w3-content">
         <div class="w3-twothird">
-        <h1>Fifth grid</h1>
+        <h1>ArcGIS Experience Builder</h1>
         <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
     
         <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
@@ -136,6 +141,63 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
         <!-- First image here (originally an anchor) ---->
         <div class="w3-third w3-center">
         <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+        </div>
+    </div>
+    </div>
+
+<!-- Sixth Grid ----------------------------------->
+<div id="arcade" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+        <!-- Second picture here...was originally a coffee cup -->
+        <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i> 
+        </div>
+    
+        <div class="w3-twothird">
+        <h1>Arcade Functionality</h1>
+        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+    
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    </div>
+    </div>
+
+<!-- Seventh Grid ----------------------------------->
+<div id="vert" class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-twothird">
+        <h1>VertiGIS Studio & Workflow</h1>
+        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+    
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+    
+        <!-- First image here (originally an anchor) ---->
+        <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+        </div>
+    </div>
+    </div>
+
+<!-- CONCLUSION Grid ----------------------------------->
+<div id="conclusion" class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+        <div class="w3-third w3-center">
+        <!-- Second picture here...was originally a coffee cup -->
+        <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i> 
+        </div>
+    
+        <div class="w3-twothird">
+        <h1>Conclusion</h1>
+        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+    
+        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
     </div>
     </div>
@@ -155,6 +217,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: Verdana, sans-serif}
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>
 </div>
+<a href=#header class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Back to Top</a>
 <p>Layout originally designed by: <a href="https://www.w3schools.com/css/css_rwd_templates.asp" target="_blank">w3.css</a></p>
 </footer>
 
