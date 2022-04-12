@@ -82,6 +82,21 @@ li.dropdown {
     background-color: #cccccc;
 }
 
+.content2 {
+    max-width: 1200px;
+    margin-left:auto;
+    margin-right:auto
+}
+
+.onethird {
+    width: 33%;
+    float: left;
+}
+
+.twothird {
+    margin-left: 66%;
+}
+
 /* W3 Schools CSS Taken Straight from Their Website */
 /* Ideally DONT TOUCH THIS */
 
