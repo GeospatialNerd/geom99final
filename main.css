@@ -76,6 +76,11 @@ li.dropdown {
     border-radius: 25px
 }
 
+/* fleming picture for footer */
+.footerpic {
+    background-image: url("images/FlemingSENRS_noBackground.png");
+    background-color: #cccccc;
+}
 
 /* W3 Schools CSS Taken Straight from Their Website */
 /* Ideally DONT TOUCH THIS */
