@@ -65,6 +65,13 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+/* Styling header image reference here!! */
+.headerpic {
+    background-image: url("images/LakeSimcoe.jpg");
+    background-color: #cccccc;
+}
+
+
 
 /* W3 Schools CSS Taken Straight from Their Website */
 /* Ideally DONT TOUCH THIS */
