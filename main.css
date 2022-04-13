@@ -66,6 +66,7 @@ li.dropdown {
     display: block;
 }
 /* Styling header image reference here!! */
+/* image retrieved from: https://www.lsrca.on.ca/Pages/How-much-do-you-know-about-Lake-Simcoe.aspx */
 .headerpic {
     background-image: url("images/lake-simcoe-sunset.jpg");
     background-color: #cccccc;
