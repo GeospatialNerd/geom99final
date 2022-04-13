@@ -66,9 +66,9 @@ li.dropdown {
     display: block;
 }
 /* Styling header image reference here!! */
-/* image retrieved from: https://www.lsrca.on.ca/Pages/How-much-do-you-know-about-Lake-Simcoe.aspx */
+/* image retrieved from: https://www.northernontario.travel/boating/5-ontario-pwc-destinations-worth-trailering-to */
 .headerpic {
-    background-image: url("images/lake-simcoe-sunset.jpg");
+    background-image: url("images/LakeSimcoeBarrie1_smaller.jpg");
     background-color: #cccccc;
 }
 
